@@ -1464,10 +1464,10 @@ static bool can_load()
 {
     current_position[E_AXIS] += 50;
     plan_buffer_line(current_position[X_AXIS], current_position[Y_AXIS], current_position[Z_AXIS],
-            current_position[E_AXIS], MMU_LOAD_FEEDRATE, active_extruder);
+            current_position[E_AXIS], MMU_LOAD_FEEDRATE/2, active_extruder);
     current_position[E_AXIS] -= 42;
     plan_buffer_line(current_position[X_AXIS], current_position[Y_AXIS], current_position[Z_AXIS],
-            current_position[E_AXIS], MMU_LOAD_FEEDRATE, active_extruder);
+            current_position[E_AXIS], MMU_LOAD_FEEDRATE/2, active_extruder);
     st_synchronize();
 
     uint_least8_t filament_detected_count = 0;
