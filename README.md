@@ -1,3 +1,7 @@
+Patched to work with [Mosquito Magnum](https://www.sliceengineering.com/shop/mosquito-magnum-hotend): filament load was getting into the melting zone so I reduced the test length.
+
+Used this [adapter](https://www.thingiverse.com/thing:3515782).
+
 # Table of contents
 
 <!--ts-->
